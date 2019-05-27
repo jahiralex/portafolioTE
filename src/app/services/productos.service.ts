@@ -38,15 +38,10 @@ export class ProductosService {
    } else {
     this.filtrarProductos( termino );
    }
-
-   /*this.productosFiltrado =  this.productos.filter( producto => {
-     return true;
-   });
-   console.log( this.productosFiltrado);*/
  }
 
  private filtrarProductos( termino: string ) {
-   console.log(this.productos);
+   //console.log(this.productos);
    this.productosFiltrado = [];
    termino = termino.toLocaleLowerCase();
 
