@@ -27,6 +27,7 @@ export class ProductosService {
  }
 
  getProducto( id: string) {
+   console.log(id);
    return this.http.get(`https://entresabanas-f684c.firebaseio.com/productos/${ id }.json`);
  }
 

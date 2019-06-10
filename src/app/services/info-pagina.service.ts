@@ -29,7 +29,7 @@ export class InfoPaginaService {
    private cargarEquipo() {
      //Leer archivo JSON
      this.http.get('https://entresabanas-f684c.firebaseio.com/equipo.json')
-     .subscribe( (resp: any[] )=> {
+     .subscribe( (resp: any[] ) => {
      this.equipo = resp;
      //console.log(resp);
      });
